@@ -1,0 +1,77 @@
+textarea {
+    min-height: 400px;
+}
+
+div, p {
+    margin: 0;
+    padding: 0;
+}
+
+.emails-view {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.emails-head {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px 300px 600px;
+}
+
+.emails-list {
+    width: 1200px;
+    height: 40px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    border: solid 0.5px lightcyan;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 295px 300px 450px 110px;
+    vertical-align: middle;
+}
+
+.emails-list:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    border-color: rgb(206, 250, 250);
+}
+
+.email-view-top {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 0.7px lightgray;
+    line-height: 30px;
+}
+
+.buttons {
+    margin-top: 5px;
+    width: 80px;
+    display: grid;
+    grid-template-columns: 35px 35px;
+    gap: 10px;
+}
+
+.btn-archive, .btn-archive:active {
+    width: 35px;
+    height: 35px;
+    border: none;
+    padding: 0;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Grey_archive_icon_%28Wikiproject_icons%29.svg/400px-Grey_archive_icon_%28Wikiproject_icons%29.svg.png') white;
+    background-size: cover;
+}
+
+.btn-reply, .btn-reply:active {
+    width: 35px;
+    height: 35px;
+    border: none;
+    padding: 0;
+    background: url('data:image/png;base64,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') white;
+    background-size: cover;
+}
